@@ -1,0 +1,295 @@
+digraph MyGraph {
+  "Cochrane Collaboration (C1)" [shape=box]
+  "Campbell Collaboration (C2)" [shape=box]
+  "Cochrane Database on Systematic Reviews" [shape=box] 
+  "Coalition for Evidence-Based Policy (since 2001)" [shape=box]
+  "Evidence-Based Medicine (EBM)" [shape=box]
+  "Evidence-Based Policymaking (EBPM)" [shape=box]
+
+  "National Commission on Energy Policy (NCEP)" [shape=box]
+  "Bipartisan Policy Center" [shape=box]
+  "U.S. Commission on Evidence-Based Policymaking (CEP)" [shape=box]
+  
+
+  "Foundations for Evidence-Based Policymaking Act of 2018" [shape=box, style=dashed]
+
+  "DARPA" [shape=box]
+  "Big Mechanism" [shape=box]
+  "Word2Vec and Atom2Vec" [shape=box]
+  "Google's DeepMind" [shape=box]
+  "AlphaFold" [shape=box]
+  "OpenAI" [shape=box]
+  "GPT-3" [shape=box]
+  "Office of Management and Budget (OMB)" [shape=box, style=dashed]
+
+  "Advisory Committee on Data for Evidence Building" [shape=box, style=dashed]
+  "Chief Privacy Officers" [shape=box, style=dashed]
+  "Chief Information Officers" [shape=box, style=dashed]
+  "Chief Performance Officers" [shape=box, style=dashed]
+  "Chief Data Officers" [shape=box, style=dashed]
+
+
+  "Federal Funding Accountability and Transparency Act of 2006" [shape=box]
+  "Digital Accountability and Transparency Act of 2014 (DATA Act)" [shape=box]
+  "USASpending.gov" [shape=box]
+  "The Data Foundation" [shape=box]
+  "The Data Coalition Initiative" [shape=box, style=dashed]
+  "Chief Data Officer Council" [shape=box, style=dashed]
+  "Federal Evidence-Based Registries and Clearinghouses" [shape=box, style=dashed]
+
+  subgraph cluster_newscience {
+     "Research Publication Bias"
+     "Misuse of p-values"
+     "The Replication Crisis"
+     "Grant Competition"
+     "Manipulation of Pharma Patents"
+     "GcMAF's False Claims on Cancer Treatment"
+     "USD 268 billion in 2026 on Cancer Therapy Market"
+     "Predatory Medical Journal"
+     "Metascience"
+     "eScience"
+     "4IR"
+     "Technological Singularity Formation"
+     "Dirac Equation"
+     "Schrödinger Equation"
+     "Quantum Mechanics"
+     "Laser Technology"
+     "Moore's Law"
+     "Deterministic Nonlinear System"
+     "Chaos Theory"
+     "Complexity Theory"
+     "Simulation Science"
+     "Big Data"
+     "New Scientific Paradigm" [shape=box]
+  }
+
+  subgraph cluster_research {
+ 
+      "Allen Institute for AI (AI2)" [shape=box]
+      "Office of Science and Technology Policy (OSTP)" [shape=box]
+      "National Library of Medicine (NLM)" [shape=box]
+      "Chan Zuckerburg Initiative (CZI)" [shape=box]
+      "Center for Security and Emerging Technology (CSET)" [shape=box]
+      "Microsoft Research" [shape=box]
+      "Google's Kaggle" [shape=box]
+  }
+
+  subgraph cluster_paper {
+      "WHO" [shape=box]
+      "PubMed Central" [shape=box]
+      "bioRxiv" [shape=box]
+      "medRxiv" [shape=box]
+  }
+
+  subgraph cluster_agile {
+      "Customer Oriented"
+      "VUCA" 
+      "Network Oriented" 
+      "Cloud Sovereignity"
+      "Digital Infrastructure"
+      "eGovernment"
+      "Agile Government" [shape=box]
+  }
+
+  subgraph cluster_openmovement {
+      "Open Source Movement"
+      "Open Data"
+      "Open Government"
+      "Open Access"
+      "Elsevier's Big Deal"
+      "Plan S"
+      "Open Science"
+      "Open Journal Systems"
+      "Public Knowledge Project"
+  }
+
+  "COVID-19 Open Research Dataset Challenge (CORD-19)" [shape=box]
+
+  "Cybernetic Governance" [shape=box, color="#ff000055"]
+
+  "New Gesellschaft" [shape=box]
+
+  subgraph cluster_economy {
+     "New Capitalism (Caput Mortuum)"
+     "Covid-19 Global Supply Chain Hiccup"
+     "Modern Physical Economic System (Zoned Unbundling & Robotic and Automation)" [shape=box]
+     "Metaverse"
+     "Digital Twins"
+  }
+
+  subgraph cluster_entropy {
+      "Quantum Computer Technology"
+      "AI Technology"
+      "Blockchain Technology"
+      "Entropy Rearrangement in Social Trust Mechanism" [shape=box]
+  }
+
+  "USD 268 billion in 2026 on Cancer Therapy Market" -> "Manipulation of Pharma Patents"
+  "Manipulation of Pharma Patents" -> "Grant Competition"
+  "Manipulation of Pharma Patents" -> "GcMAF's False Claims on Cancer Treatment"
+  "Grant Competition" -> "Research Publication Bias"
+  "Grant Competition" -> "Predatory Medical Journal"
+  "Grant Competition" -> "Misuse of p-values"
+  "GcMAF's False Claims on Cancer Treatment" -> "Predatory Medical Journal"
+  "Predatory Medical Journal" -> "Research Publication Bias"
+  "Research Publication Bias" -> "Metascience"
+  "Effectiveness and Efficiency published in 1971" -> "Level I clinical evidence or Randomized Control Trials (RCTs)"
+  "Controversy surrounding rofecoxib (Vioxx)" -> "Level I clinical evidence or Randomized Control Trials (RCTs)"
+  "Level I clinical evidence or Randomized Control Trials (RCTs)" -> "Evidence-Based Medicine (EBM)"
+  "Controversy surrounding rofecoxib (Vioxx)" -> "Rigorous evaluations of healthcare interventions" 
+  "Rigorous evaluations of healthcare interventions" -> "Evidence-Based Medicine (EBM)"
+  "Evidence-Based Medicine (EBM)" -> "Cochrane Collaboration (C1)" 
+
+  "Cochrane Collaboration (C1)" -> "Campbell Collaboration (C2)"
+  "Cochrane Collaboration (C1)" -> "Coalition for Evidence-Based Policy (since 2001)" [style=dashed]
+  "Cochrane Collaboration (C1)" -> "Cochrane Database on Systematic Reviews"
+  "Campbell Collaboration (C2)" -> "U.S. Commission on Evidence-Based Policymaking (CEP)" [style=dashed]
+  "Coalition for Evidence-Based Policy (since 2001)" -> "U.S. Commission on Evidence-Based Policymaking (CEP)"
+
+  "Fostering an Emerging Revolution in Military Affairs" -> "DARPA"
+  "DARPA" -> "Big Mechanism"
+  "Big Mechanism" -> "Differentiable Programming"
+  "Word2Vec and Atom2Vec" -> "Differentiable Programming"
+  "Google's DeepMind" -> "AlphaFold"
+  "AlphaFold" -> "Differentiable Programming"
+  "OpenAI" -> "GPT-3"
+  "GPT-3" -> "Differentiable Programming"
+  "Differentiable Programming" -> "Federal Evidence-Based Registries and Clearinghouses"
+  "Differentiable Programming" -> "COVID-19 Open Research Dataset Challenge (CORD-19)"
+
+  "National Commission on Energy Policy (NCEP)" -> "Bipartisan Policy Center"
+  "Bipartisan Policy Center" -> "U.S. Commission on Evidence-Based Policymaking (CEP)"
+ 
+  "U.S. Commission on Evidence-Based Policymaking (CEP)" -> "Foundations for Evidence-Based Policymaking Act of 2018"
+  "Foundations for Evidence-Based Policymaking Act of 2018" -> "Office of Management and Budget (OMB)"
+  "Office of Management and Budget (OMB)" -> "Evidence-Based Policymaking (EBPM)"
+
+  "Foundations for Evidence-Based Policymaking Act of 2018" -> "Advisory Committee on Data for Evidence Building" 
+  "Advisory Committee on Data for Evidence Building" -> "Chief Privacy Officers" 
+  "Advisory Committee on Data for Evidence Building" -> "Chief Performance Officers" 
+  "Advisory Committee on Data for Evidence Building" -> "Chief Information Officers" 
+  "Advisory Committee on Data for Evidence Building" -> "Chief Data Officers" 
+  "Advisory Committee on Data for Evidence Building" -> "Evidence-Based Policymaking (EBPM)"
+
+  "Federal Funding Accountability and Transparency Act of 2006" -> "Digital Accountability and Transparency Act of 2014 (DATA Act)"
+  "Digital Accountability and Transparency Act of 2014 (DATA Act)" -> "The Data Foundation"
+  "Digital Accountability and Transparency Act of 2014 (DATA Act)" -> "USASpending.gov"
+  "The Data Foundation" -> "The Data Coalition Initiative"
+  "The Data Coalition Initiative" -> "Chief Data Officers" 
+  "Chief Data Officers" -> "Evidence-Based Policymaking (EBPM)"
+
+  "Office of Management and Budget (OMB)" -> "Chief Data Officer Council"
+  "Chief Data Officer Council" -> "Chief Data Officers"
+
+  "Office of Management and Budget (OMB)" -> "Federal Evidence-Based Registries and Clearinghouses" [style=dashed]
+  "Federal Evidence-Based Registries and Clearinghouses" -> "Evidence-Based Policymaking (EBPM)"
+
+  "Covid-19 Crisis" -> "Allen Institute for AI (AI2)"
+  "Covid-19 Crisis" -> "WHO"
+
+  "Allen Institute for AI (AI2)" -> "Office of Science and Technology Policy (OSTP)" [dir=none,color="blue"]
+  "Office of Science and Technology Policy (OSTP)" -> "National Library of Medicine (NLM)" [dir=none,color="blue"]
+  "National Library of Medicine (NLM)" -> "Chan Zuckerburg Initiative (CZI)" [dir=none,color="blue"]
+  "Chan Zuckerburg Initiative (CZI)" -> "Center for Security and Emerging Technology (CSET)" [dir=none,color="blue"]
+  "Center for Security and Emerging Technology (CSET)" -> "Microsoft Research" [dir=none,color="blue"]
+  "Microsoft Research" -> "Google's Kaggle" [dir=none,color="blue"]
+  "Google's Kaggle" -> "COVID-19 Open Research Dataset Challenge (CORD-19)" 
+
+  "WHO" -> "PubMed Central" [dir=none,color="blue"]
+  "PubMed Central" -> "bioRxiv" [dir=none,color="blue"]
+  "bioRxiv" -> "medRxiv" [dir=none,color="blue"]
+  "medRxiv" -> "COVID-19 Open Research Dataset Challenge (CORD-19)" 
+
+
+  "COVID-19 Open Research Dataset Challenge (CORD-19)" -> "Evidence-Based Policymaking (EBPM)"
+
+  "Evidence-Based Policymaking (EBPM)" -> "New Gesellschaft"
+
+  "Misuse of p-values" -> "The Replication Crisis"
+  "The Replication Crisis" -> "Metascience"
+  "Metascience" -> "New Scientific Paradigm" [style=dashed]
+  "Metascience" -> "Evidence-Based Medicine (EBM)" [style=dashed]
+  "Dirac Equation" -> "Quantum Mechanics"
+  "Schrödinger Equation" -> "Quantum Mechanics"
+  "Quantum Mechanics" -> "Complexity Theory"
+  "Quantum Mechanics" -> "Laser Technology"
+  "Laser Technology" -> "Moore's Law"
+  "Moore's Law" -> "Technological Singularity Formation"
+  "Deterministic Nonlinear System" -> "Chaos Theory"
+  "Chaos Theory" -> "Complexity Theory"
+  "Complexity Theory" -> "eScience" 
+  "Simulation Science" -> "eScience" 
+  "Big Data" -> "eScience" 
+  "Technological Singularity Formation" -> "4IR"
+  "Technological Singularity Formation" -> "Simulation Science"
+  "4IR" -> "New Scientific Paradigm"
+  "eScience" -> "New Scientific Paradigm" 
+  "New Scientific Paradigm" -> "New Gesellschaft"
+
+  "Customer Oriented" -> "VUCA" [dir=none,color="blue"]
+  "VUCA" -> "Network Oriented" [dir=none,color="blue"]
+  "Network Oriented" -> "Agile Government" 
+  "Cloud Sovereignity" -> "Digital Infrastructure" [dir=none,color="blue"]
+  "Digital Infrastructure" -> "eGovernment" [dir=none,color="blue"]
+  "eGovernment" -> "Agile Government"
+  "Agile Government" -> "New Gesellschaft"
+
+  "Cryptography" -> "Blockchain Technology"
+  "Cryptography" -> "Cloud Sovereignity"
+ 
+
+  "New Scientific Paradigm" -> "Quantum Computer Technology" [style=dashed]
+  "New Scientific Paradigm" -> "Evidence-Based Policymaking (EBPM)" [style=dashed]
+
+
+  "Quantum Computer Technology" -> "AI Technology" [dir=none,color="blue"]
+  "AI Technology" -> "Blockchain Technology" [dir=none,color="blue"]
+  "Blockchain Technology" -> "Entropy Rearrangement in Social Trust Mechanism" [dir=none,color="blue"]
+  "Entropy Rearrangement in Social Trust Mechanism" -> "New Gesellschaft"
+
+  "Big Data" -> "AI Technology" 
+  "Quantum Mechanics" -> "Quantum Computer Technology"
+
+  "Open Source Movement" -> "Open Data"
+  "Elsevier's Big Deal" -> "Plan S" [style=dashed]
+  "Plan S" -> "Open Access"
+  "Plan S" -> "Open Science"
+  "Open Science" -> "Open Government"
+  "Open Data" -> "Open Access"
+  "Open Access" -> "Open Government"
+  "Open Source Movement" -> "Open Government" 
+  "Open Source Movement" -> "Public Knowledge Project"
+  "Public Knowledge Project" -> "Open Journal Systems"
+  "Open Journal Systems" -> "Open Access"
+
+  "Open Journal Systems" -> "Open Access Journal"
+
+  "Open Access Journal" -> "PubMed Central"
+  "Open Access Journal" -> "bioRxiv"
+  "Open Access Journal" -> "medRxiv"
+
+
+  "Open Science" -> "Metascience"
+  "Open Access" -> "Metascience"
+
+
+  "Open Government" -> "New Gesellschaft"
+  "Open Data" -> "New Gesellschaft"
+
+
+  "New Gesellschaft" -> "Cybernetic Governance" 
+  "New Gesellschaft" -> "New Capitalism (Caput Mortuum)" [style=dashed]
+
+
+  "Covid-19 Crisis" -> "Covid-19 Global Supply Chain Hiccup"
+  "Covid-19 Global Supply Chain Hiccup" -> "Modern Physical Economic System (Zoned Unbundling & Robotic and Automation)"
+  "New Capitalism (Caput Mortuum)" -> "Modern Physical Economic System (Zoned Unbundling & Robotic and Automation)" 
+  "New Capitalism (Caput Mortuum)" -> "Metaverse" [constraint=false]
+  "New Capitalism (Caput Mortuum)" -> "Digital Twins" 
+
+  "Modern Physical Economic System (Zoned Unbundling & Robotic and Automation)" -> "Metaverse" [dir=both, style=dashed]
+  "Modern Physical Economic System (Zoned Unbundling & Robotic and Automation)" -> "Digital Twins" [dir=both, style=dashed]
+  "Metaverse" -> "Digital Twins" [dir=both, style=dashed]
+  
+
+}
